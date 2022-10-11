@@ -2,6 +2,8 @@ version: "3.8"
 services:
  web:
   build: ./nginx/
+  deploy:
+   replicas: 3
   container_name: web1
   ports:
    - "8080:80"
